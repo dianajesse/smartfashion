@@ -5,7 +5,7 @@ const authController = {
         try{
              const {name,email,password}= req.body
              console.log({name,email,password})
-             if(!name||email|| !password)
+             if(!name|| !email|| !password)
              return res.status(400).json({ msg:"please fill in all fields"})
              
              
